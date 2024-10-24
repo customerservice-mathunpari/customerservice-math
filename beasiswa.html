@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Service - Pendidikan Matematika Unpari</title>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            /* Styling Global */
+            body {
+                font-family: 'Poppins', sans-serif;
+                background: linear-gradient(to right, #6dd5fa, #2980b9);
+                margin: 0;
+                padding: 0;
+                color: #333;
+            }
+
+            header {
+                background-color: #1b2735;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                position: relative;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 28px;
+                font-weight: 600;
+            }
+
+            .logo-container {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
+            .logo {
+                width: 120px;
+                height: auto;
+            }
+
+            nav {
+                background-color: #1b2735;
+                padding: 10px 0;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #ffdd59;
+                font-weight: 600;
+                font-size: 18px;
+                transition: color 0.3s ease;
+            }
+
+            nav ul li a:hover {
+                color: #fff;
+            }
+
+            .container {
+                width: 85%;
+                margin: 20px auto;
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            }
+
+            h2 {
+                color: #1b2735;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .card {
+                background-color: #fefefe;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .card h3 {
+                margin-bottom: 10px;
+                color: #2980b9;
+            }
+
+            .btn-link {
+                display: inline-block;
+                padding: 10px 15px;
+                background-color: #2980b9;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-top: 10px;
+                transition: background-color 0.3s;
+            }
+
+            .btn-link:hover {
+                background-color: #21618c;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #1b2735;
+                color: white;
+                margin-top: 40px;
+            }
+
+            .hero-img img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+
+            @media (max-width: 768px) {
+                nav ul {
+                    flex-direction: column;
+                }
+                .card-container {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo-container">
+                <img src="logo-unpari.png" alt="Logo Unpari" class="logo">
+            </div>
+            <h1>Customer Service Math<br>Universitas PGRI Silampari</h1>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tentang-prodi.html">Tentang Prodi</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran dan Biaya</a></li>
+                <li><a href="beasiswa.html">Beasiswa</a></li>
+                <li><a href="program-kampus.html">Program Kampus</a></li>
+                <li><a href="kontak.html">Kontak Prodi</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section Beasiswa -->
+        <section class="container">
+            <h2>Program Beasiswa</h2>
+            <p>Bagi mahasiswa berprestasi dan kurang mampu secara ekonomi, tersedia program beasiswa berikut:</p>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Beasiswa Unggulan</h3>
+                    <p>Link Pendaftaran:</p>
+                    <a href="https://beasiswaunggulan.kemdikbud.go.id/" target="_blank" class="btn-link">Daftar Beasiswa Unggulan</a>
+                </div>
+
+                <div class="card">
+                    <h3>Beasiswa KIP</h3>
+                    <p>Link Pendaftaran:</p>
+                    <a href="https://kip-kuliah.kemdikbud.go.id/" target="_blank" class="btn-link">Daftar Beasiswa KIP</a>
+                </div>
+
+                <div class="card">
+                    <h3>Beasiswa Perbankan</h3>
+                    <p>Link Pendaftaran:</p>
+                    <a href="https://bit.ly/PENDAFTARAN_BEASISWA_BANK_INDONESIA2024_UPNVJT" target="_blank" class="btn-link">Daftar Beasiswa Perbankan</a>
+                </div>
+
+                <div class="card">
+                    <h3>Beasiswa Kualifikasi Guru Honor</h3>
+                    <p>Link Pendaftaran:</p>
+                    <a href="https://bit.ly/daftarBeaguru8" target="_blank" class="btn-link">Daftar Beasiswa Guru Honorer</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Universitas PGRI Silampari. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
